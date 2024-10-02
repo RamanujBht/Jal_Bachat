@@ -22,32 +22,6 @@ This project is a **Digital Knowledge Sharing Platform** designed to address wat
 - **Database:** 
   - MySQL (for storing articles, users, and other platform data)
 
-## Folder Structure
-
-```bash
-/my-website-project
-|-- /admin                # Admin panel files
-|   |-- admin.html
-|   |-- admin.js
-|   |-- admin.css
-|
-|-- /assets               # Static assets (images, videos)
-|   |-- /images
-|   |-- /videos
-|
-|-- /css                  # Styling files
-|   |-- styles.css
-|
-|-- /js                   # JavaScript files for interactivity
-|   |-- scripts.js
-|
-|-- /php                  # Backend PHP scripts
-|   |-- backend.php
-|
-|-- index.html            # Main landing page
-|-- README.md             # Project documentation
-```
-
 ## Installation Instructions
 
 1. Clone the repository to your local machine:
