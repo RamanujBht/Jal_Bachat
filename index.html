@@ -1,39 +1,134 @@
-## index.html
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Digital Knowledge Sharing Platform</title>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="case_studies.html">Case Studies</a></li>
-            <li><a href="forums.html">Forums</a></li>
-            <li><a href="water_saving_techniques.html">Water-Saving Techniques</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Welcome to the Digital Knowledge Sharing Platform</h1>
-        <p>Your resource for water-efficient techniques and methods.</p>
-    </header>
-    <section id="case-studies">
-        <h2>Case Studies</h2>
-        <!-- Case studies content -->
-    </section>
-    <section id="community-forums">
-        <h2>Community Forums</h2>
-        <!-- Forum content -->
-    </section>
-    <section id="success-stories">
-        <h2>Success Stories</h2>
-        <!-- Success stories content -->
-    </section>
-    <script src="js/scripts.js"></script>
+<!DOCTYPE html> 
+<!-- Opens the HTML document with English language and a class indicating no JavaScript is enabled -->
+<html lang="en" class="no-js"> 
+    
+
+<!-- Head section begins, containing meta-information about the document -->
+<head> 
+    
+    <!-- Sets the character encoding for the document to UTF-8 -->
+    <title>Jal Bachat - Water Conservation Wiki</title> 
+    <meta charset="utf-8"> 
+    <!-- Specifies the title of the document, displayed in the browser tab -->
+    <meta name="description" content="Jal Bachat is a free online resource dedicated to water conservation techniques, created and curated by experts and volunteers."> 
+    <!-- Provides a brief description of the page for search engines -->
+    
+    <script>
+        // Replaces the 'no-js' class with 'js-enabled' to indicate that JavaScript is available
+        document.documentElement.className = document.documentElement.className.replace(/(^|\s)no-js(\s|$)/, "$1js-enabled$2");
+    </script>
+    
+    <meta name="viewport" content="initial-scale=1,user-scalable=yes"> 
+    <!-- Sets the viewport for responsive design, allowing for scaling on different devices -->
+
+    <!-- Links to touch icon for mobile devices -->
+    <link rel="apple-touch-icon" href="assets\Images\Logo.png"> 
+
+    <!-- Specifies the favicon for Jal Bachat, displayed in the browser tab -->
+    <link rel="shortcut icon" href="assets\Images\Logo.png"> 
+
+    <!-- Links to the Creative Commons license that will apply to Jal Bachat content -->
+    <link rel="license" href="//creativecommons.org/licenses/by-sa/4.0/"> 
+
+    <!-- Links to the external CSS stylesheet for styling the document -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" /> 
+
+    <!-- Preconnects to the server that handles image uploads to enhance performance -->
+    <link rel="preconnect" href="//upload.jalbachat.org"> 
+
+    <!-- Links to the social media profile or community of Jal Bachat on decentralized platforms -->
+    <link rel="me" href="https://social.jalbachat.org/@jalbachat"> 
+
+    <!-- Open Graph meta tags for sharing on social media platforms -->
+    <meta property="og:url" content="https://jalbachat.org"> 
+    <!-- Open Graph meta tag for the URL of the page -->
+    
+    <meta property="og:title" content="Jal Bachat - A Free Water Conservation Resource"> 
+    <!-- Open Graph meta tag for the title of the page -->
+    
+    <meta property="og:type" content="website"> 
+    <!-- Open Graph meta tag indicating the type of object (website) -->
+    
+    <meta property="og:description" content="Jal Bachat is a collaborative platform focused on sharing knowledge and techniques for water conservation."> 
+    <!-- Open Graph meta tag for the description of the page -->
+    
+    <meta property="og:image" content="assets\Images\Logo.png"> 
+    <!-- Open Graph meta tag for the image associated with the page -->
+</head> 
+
+<!-- Head section ends -->
+
+<body id="www-jalbachat-org">
+    <main>
+        <div class="central-textlogo">
+            <!-- Replace Wikipedia logo with Jal Bachat logo -->
+            <img class="central-featured-logo" src="https://jalbachat.org/assets/jalbachat-logo.png" width="200" height="183" alt="Jal Bachat Logo">
+            <h1 class="central-textlogo-wrapper">
+                <span class="central-textlogo__image">
+                    <!-- Update the name to Jal Bachat -->
+                    Jal Bachat
+                </span>
+                <strong class="localized-slogan">Water Conservation Knowledge Hub</strong>
+            </h1>
+        </div>
+
+        <nav aria-label="Main categories" class="central-featured">
+            <!-- Add links to water conservation categories -->
+            <div class="central-featured-category">
+                <a href="/techniques" class="link-box">
+                    <strong>Water-Saving Techniques</strong>
+                    <small>Articles on efficient water-saving methods</small>
+                </a>
+            </div>
+            <div class="central-featured-category">
+                <a href="/case-studies" class="link-box">
+                    <strong>Case Studies</strong>
+                    <small>Real-world applications of water conservation</small>
+                </a>
+            </div>
+            <div class="central-featured-category">
+                <a href="/community" class="link-box">
+                    <strong>Community Collaboration</strong>
+                    <small>Forums for knowledge sharing and discussion</small>
+                </a>
+            </div>
+        </nav>
+
+        <div role="search" class="search-container">
+            <!-- Update search bar for Jal Bachat -->
+            <form class="pure-form" id="search-form" action="/search" method="get">
+                <fieldset>
+                    <input type="text" name="q" placeholder="Search Jal Bachat..." autofocus="autofocus">
+                    <button class="pure-button pure-button-primary-progressive" type="submit">Search</button>
+                </fieldset>
+            </form>
+        </div>
+        
+        <hr>
+
+        <!-- Remove language links or keep only necessary ones -->
+        <div class="language-list">
+            <h2>Available in:</h2>
+            <ul>
+                <li><a href="/en">English</a></li>
+                <li><a href="/hi">हिन्दी</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="site-license">
+            <!-- Update the footer for Jal Bachat -->
+            <small>This page is available under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike License</a>.</small>
+            <small><a href="/privacy-policy">Privacy Policy</a></small>
+        </p>
+    </footer>
+
+    <!-- Scripts for performance and functionality -->
+    <script src="js/index.js"></script>
+    <script src="js/gt-ie9.js"></script>
 </body>
+</html>
+
+
 </html>
